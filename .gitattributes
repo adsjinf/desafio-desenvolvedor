@@ -1,0 +1,5 @@
+# Para arquivos .cmd (scripts Windows) usarem CRLF:
+*.cmd text eol=crlf
+
+# Opcional: Forçar arquivos .sh (scripts Unix) a usarem LF
+*.sh text eol=lf
