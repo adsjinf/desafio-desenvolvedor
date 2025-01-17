@@ -1,6 +1,6 @@
 package br.com.oliveiratrust.apioliveiratrust.entity;
 
-public class ArquivoItemEntity {
+public class ItemArquivoEntity {
 
     private String rptDt;
     private String tckrSymb;
@@ -55,10 +55,10 @@ public class ArquivoItemEntity {
     private String mktCptlstn;
     private String corpGovnLvlNm;
 
-    public ArquivoItemEntity() {
+    public ItemArquivoEntity() {
     }
 
-    public ArquivoItemEntity(
+    public ItemArquivoEntity(
             String rptDt,
             String tckrSymb,
             String asst,
