@@ -17,7 +17,7 @@ public class RabnitMqConfig {
     }
 
     @Bean
-    public Declarable filaOliveiraTrust(){
+    public Declarable filaOliveiraTrustCreateQueue(){
         return new Queue(FILAOLIVEIRATRUST_CREATED_QUEUE);
     }
 }
