@@ -1,6 +1,6 @@
 package br.com.oliveiratrust.apioliveiratrust.listener;
 
-import br.com.oliveiratrust.apioliveiratrust.controller.dto.OliveiraTrustCreatedEvent;
+import br.com.oliveiratrust.apioliveiratrust.listener.dto.OliveiraTrustCreatedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Declarable;

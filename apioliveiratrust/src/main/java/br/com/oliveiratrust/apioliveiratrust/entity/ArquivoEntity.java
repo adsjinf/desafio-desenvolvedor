@@ -13,7 +13,7 @@ public class ArquivoEntity {
     private Long arquivoId;
 
     @Indexed(name ="nome_arquivo_index")
-    private String nomeArquivo ;
+    private String nomeArquivo;
     private String usuario;
 
     private List<ItemArquivoEntity> itens;

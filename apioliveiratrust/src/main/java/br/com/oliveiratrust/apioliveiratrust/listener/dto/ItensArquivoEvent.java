@@ -1,4 +1,4 @@
-package br.com.oliveiratrust.apioliveiratrust.controller.dto;
+package br.com.oliveiratrust.apioliveiratrust.listener.dto;
 
 public record ItensArquivoEvent(
 
