@@ -166,6 +166,8 @@ public class ItemArquivoEntity {
         this.corpGovnLvlNm = corpGovnLvlNm;
     }
 
+
+
     public String getRptDt() {
         return rptDt;
     }

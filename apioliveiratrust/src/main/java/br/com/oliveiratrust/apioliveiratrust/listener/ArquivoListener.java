@@ -1,6 +1,7 @@
 package br.com.oliveiratrust.apioliveiratrust.listener;
 
 import br.com.oliveiratrust.apioliveiratrust.listener.dto.OliveiraTrustCreatedEvent;
+import br.com.oliveiratrust.apioliveiratrust.service.ArquivoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.messaging.Message;
@@ -14,8 +15,16 @@ public class ArquivoListener {
 
     private final Logger logger = LoggerFactory.getLogger(ArquivoListener.class);
 
+    private final ArquivoService arquivoService;
+
+    public ArquivoListener(ArquivoService arquivoService) {
+        this.arquivoService = arquivoService;
+    }
+
     @RabbitListener(queues = FILAOLIVEIRATRUST_CREATED_QUEUE)
     public void listen(Message<OliveiraTrustCreatedEvent> message){
         logger.info("message consulmed: {}", message);
+
+        arquivoService.save(message.getPayload());
     }
 }
